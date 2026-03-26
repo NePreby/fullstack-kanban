@@ -1,0 +1,72 @@
+.create-card-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.create-card-modal {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.create-card-modal h3 {
+  margin: 0 0 16px;
+  font-size: 18px;
+  color: var(--text-primary, #1e293b);
+}
+
+.create-card-modal input,
+.create-card-modal textarea,
+.create-card-modal select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.create-card-modal input:focus,
+.create-card-modal textarea:focus {
+  outline: none;
+  border-color: var(--accent, #3b82f6);
+  box-shadow: 0 0 0 3px var(--accent-bg, #dbeafe);
+}
+
+.create-card-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.create-card-actions button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--border-color, #e2e8f0);
+  background: white;
+  color: var(--text-primary, #1e293b);
+}
+
+.create-card-actions button[type="submit"] {
+  background: var(--accent, #3b82f6);
+  color: white;
+  border-color: var(--accent, #3b82f6);
+}
+
+.create-card-actions button[type="submit"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
