@@ -44,3 +44,15 @@ export async function moveCard(id: string, data: MoveCardRequest): Promise<Card>
     // position handled by backend
   });
 }
+
+export async function getCardSuggestions(data: { title: string; description?: string }) {
+  const res = await fetch('/api/cards/suggestions', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+  if (!res.ok) {
+    throw new Error('Failed to fetch card suggestions');
+  }
+  return res.json();
+}

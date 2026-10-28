@@ -70,3 +70,102 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+.create-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.ai-suggest-btn {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.ai-suggest-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ai-suggestion-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.ai-suggestion-info {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.ai-badge {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.ai-badge.category {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.ai-badge.priority.urgent { background: #fee2e2; color: #991b1b; }
+.ai-badge.priority.high { background: #ffedd5; color: #9a3412; }
+.ai-badge.priority.medium { background: #fef3c7; color: #92400e; }
+.ai-badge.priority.low { background: #dcfce7; color: #166534; }
+
+.ai-reasoning {
+  color: #64748b;
+  font-size: 12px;
+  margin: 4px 0 8px 0;
+}
+
+.ai-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.ai-actions .apply-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.ai-actions .dismiss-btn {
+  background: transparent;
+  color: #64748b;
+  border: 1px solid #cbd5e1;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 12px;
+  color: #475569;
+  margin-bottom: 4px;
+}

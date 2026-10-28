@@ -113,3 +113,16 @@ export interface BoardWithColumns extends Board {
 export interface ColumnWithCards extends Column {
   cards: Card[];
 }
+
+export interface TaskSuggestionRequest {
+  title: string;
+  description?: string;
+}
+
+export interface TaskSuggestionResponse {
+  category: 'bug' | 'feature' | 'enhancement' | 'documentation' | 'security' | 'performance' | 'design' | 'refactor' | 'task';
+  priority: 'low' | 'medium' | 'high' | 'urgent';
+  tags: string[];
+  reasoning: string;
+  confidence: number;
+}

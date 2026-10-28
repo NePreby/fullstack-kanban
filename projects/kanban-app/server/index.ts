@@ -6,6 +6,7 @@ import cardsRouter from './routes/cards';
 import searchRouter from './routes/search';
 import calendarRouter from './routes/calendar';
 import viewsRouter from './routes/views';
+import suggestionsRouter from './routes/suggestions';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -23,6 +24,8 @@ app.use('/api/cards', cardsRouter);
 app.use('/api/search', searchRouter);
 app.use('/api/calendar', calendarRouter);
 app.use('/api/views', viewsRouter);
+app.use('/api/cards/suggestions', suggestionsRouter);
+app.use('/api/tasks/suggestions', suggestionsRouter);
 
 // Health check
 app.get('/api/health', (_req, res) => {
