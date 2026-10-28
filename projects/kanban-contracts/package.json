@@ -1,0 +1,13 @@
+{
+  "name": "kanban-contracts",
+  "version": "1.0.0",
+  "description": "AlgoKit TEALScript smart contract for Kanban task bounty escrow on Algorand",
+  "main": "contracts/BountyEscrow.algo.ts",
+  "scripts": {
+    "test": "node --test tests/bountyEscrow.test.mjs",
+    "deploy:testnet": "npx tsx scripts/deploy-testnet.ts"
+  },
+  "keywords": ["algorand", "algokit", "tealscript", "smart-contract", "escrow", "bounty"],
+  "author": "NePreby",
+  "license": "MIT"
+}
